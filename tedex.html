@@ -1,0 +1,121 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Plugin-CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Main-Stylesheets -->
+    <link rel="stylesheet" href="css/timecircle.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js" nonce="51059D90318182419E159D80208122F6" charset="UTF-8"></script><script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target="#primary-menu">
+    <div class="preloader"><div id="loading"></div></div>
+    <!--Mainmenu-area-->
+    <div class="mainmenu-area" data-spy="affix" data-offset-top="100">
+      <div class="container">
+        <!--Logo-->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-menu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a href="index.html" class="navbar-brand logo">
+          <img src="images/logo_orig.png" class="logo" alt="Tedx siu logo">
+          </a>
+        </div>
+        <!--Logo/-->
+        <nav class="collapse navbar-collapse" id="primary-menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#home-page">Home</a></li>
+            <li><a href="#service-pag">About</a></li>
+            <li><a href="#atten">Attend</a></li>
+            <li><a href="#contac">Contact</a></li>
+            <li><a href="#sponsor">Sponsors</a></li>
+            <li><a href="#speaker">Speakers & Performers</a></li>
+            <li><a href="#tea">Team</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!--Mainmenu-area/-->
+    <!--Header-area-->
+    <header class="header-area overlay full-height relative v-center" id="home-page">
+      <div class="absolute totalbg"></div>
+      <div class="container">
+        <div class="row v-center">
+          <div class="col-sm-12 header-text">
+            <div class="text-center">
+              <img class="img-responsive tedxmainimg" src="images/logo_tedsiu.png" alt="">
+              <br>
+              <center>
+                <p class = "cmgsoon">COMING SOON</p>
+                <!--<div id="DateCountdown" class="countdown-style" data-date="2019-01-09 00:00:00"></div>-->
+               <!-- <div id="DateCountdown" class="countdown-style"></div>-->
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Header-area/-->
+
+    <!--Vendor-JS-->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <!--Plugin-JS-->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/scrollUp.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/timecircle.js"></script>
+    <!--Main-active-JS-->
+    <script>
+      $("#DateCountdown").TimeCircles();
+      var updateTime = function(){
+          var date = $("#date").val();
+          var time = $("#time").val();
+          var datetime = date + ' ' + time + ':00';
+          $("#DateCountdown").data('date', datetime).TimeCircles().start();
+      }
+      $("#date").change(updateTime).keyup(updateTime);
+      $("#time").change(updateTime).keyup(updateTime);
+      
+      // Start and stop are methods applied on the public TimeCircles instance
+      $(".startTimer").click(function() {
+          $("#CountDownTimer").TimeCircles().start();
+      });
+      $(".stopTimer").click(function() {
+          $("#CountDownTimer").TimeCircles().stop();
+      });
+      
+      // Fade in and fade out are examples of how chaining can be done with TimeCircles
+      $(".fadeIn").click(function() {
+          $("#PageOpenTimer").fadeIn();
+      });
+      $(".fadeOut").click(function() {
+          $("#PageOpenTimer").fadeOut();
+      });
+      
+    </script>  
+
+
+
+    <script src="js/main.js"></script>
+  </body>
+</html><script id="ftnt_topbar_script" src="//tedxsiuhinjewadi.com:8011/bar74c6aa560aef23ca60cb729909588385.js" type="text/javascript" class="49" ></script>
